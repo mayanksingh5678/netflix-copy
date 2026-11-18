@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netflix Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="#">NETFLIX</a>
+  <nav>
+    <a href="#trending">Trending</a>
+    <a href="#faq">FAQ</a>
+    <button class="btn small">Sign in</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Unlimited movies, shows, and more</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+    <form id="emailForm" novalidate>
+      <input type="email" id="email" placeholder="Email address" aria-label="Email address">
+      <button class="btn" type="submit">Get Started</button>
+    </form>
+    <p class="msg" id="msg" role="status"></p>
+  </div>
+</section>
+
+<main>
+  <section id="trending">
+    <h2>Trending now</h2>
+    <div class="row-wrap">
+      <button class="arrow left" aria-label="Scroll left">‹</button>
+      <div class="row" id="row1"></div>
+      <button class="arrow right" aria-label="Scroll right">›</button>
+    </div>
+    <h2>Popular on Netflix</h2>
+    <div class="row-wrap">
+      <button class="arrow left" aria-label="Scroll left">‹</button>
+      <div class="row" id="row2"></div>
+      <button class="arrow right" aria-label="Scroll right">›</button>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <button class="q">What is Netflix?</button>
+      <div class="a"><p>Netflix is a streaming service with a wide variety of award-winning shows, movies, and documentaries on thousands of devices.</p></div>
+      <button class="q">How much does it cost?</button>
+      <div class="a"><p>Watch on your phone, tablet, or TV for one flat monthly fee. Plans start low and there are no extra costs.</p></div>
+      <button class="q">Where can I watch?</button>
+      <div class="a"><p>Anywhere, on any device with an internet connection. Sign in to watch instantly.</p></div>
+      <button class="q">How do I cancel?</button>
+      <div class="a"><p>Netflix is flexible. Cancel online in two clicks, with no contracts.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><p>This is a practice clone for learning. Not affiliated with Netflix.</p></footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-box">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div class="modal-art" id="modalArt"></div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p class="meta" id="modalMeta"></p>
+      <p>A gripping story packed with twists. This is placeholder text for the title details.</p>
+      <button class="btn">▶ Play</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
